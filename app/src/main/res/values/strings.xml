@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AniKids</string>
+    <string name="question">Câu đố</string>
+    <string name="API_KEY">AIzaSyDnFXzTSpGojhXNZgd5W21ckgoIU0mIacA</string>
+    <string name="player_error">error</string>
+</resources>

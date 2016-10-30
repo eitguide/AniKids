@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_screen_home"
+    tools:context="com.hackathon.anikids.view.QuestionActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/mini_logo" />
+
+    <com.hackathon.anikids.control.KarateTextView
+        style="@style/AniKidTile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/question"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <ScrollView
+        android:id="@+id/srvQuestion"
+        android:layout_width="@dimen/default_border_width"
+        android:layout_height="@dimen/default_border_height"
+        android:scrollbars="none"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/border_question">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="@dimen/defalt_border_inside_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="No data"
+            android:textColor="#2c3e50" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="@dimen/default_border_width"
+        android:layout_height="@dimen/defalt_table_tag"
+        android:layout_alignLeft="@+id/srvQuestion"
+        android:layout_alignTop="@+id/srvQuestion"
+        android:layout_marginTop="165dp">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/white_tag"
+            android:padding="@dimen/padding">
+
+            <com.hackathon.anikids.control.DinhTranTextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:padding="8dp"
+                android:text="data"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/blue_tag">
+
+            <com.hackathon.anikids.control.DinhTranTextView
+                android:id="@+id/tvQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:padding="8dp"
+                android:text="Heo"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/green_tag">
+
+            <com.hackathon.anikids.control.DinhTranTextView
+                android:id="@+id/tvQuestion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:padding="8dp"
+                android:text="Heo"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/orange_tag">
+
+            <com.hackathon.anikids.control.DinhTranTextView
+                android:id="@+id/tvQuestion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:padding="8dp"
+                android:text="Heo"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
